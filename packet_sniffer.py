@@ -80,7 +80,7 @@ def get_ip_addr_human_readable(addr):
 
 
 
-# The IP header has a welll defined structure:
+# The IP header has a well defined structure:
 # Protocol Version (four bits): The first four bits. This represents the current IP protocol. 
 # Header Length (four bits): The length of the IP header is represented in 32-bit words. Since 
 #   this field is four bits, the maximum header length allowed is 60 bytes. Usually the value is 5, 
@@ -115,7 +115,7 @@ def get_ip_addr_human_readable(addr):
 #
 def ipv4_head_decode(raw_data): 
     version_header_length = raw_data[0]
-    # Bitwise operation, shit right 4 bits. We're left with only the version.
+    # Bitwise operation, shift right 4 bits. We're left with only the version.
     version = version_header_length >> 4 
     # We need the header length so we know where the data starts
     # a = 50 ->    110010
