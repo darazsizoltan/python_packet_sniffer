@@ -8,7 +8,7 @@ ETHERNET_PROTOCOL_IPV4 = 8
 
 
 # What is a socket?
-# Socket is an endpoint of communication chanel used by programs to send data.
+# Socket is an endpoint of communication channel used by programs to send data.
 # The data can travel back and forth locally or across the internet.
 # Sockets have two primary params to controll the way they send data:
 #   Address family: OSI network layer protocol
